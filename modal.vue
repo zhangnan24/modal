@@ -1,5 +1,5 @@
 <template>
-  <div class="modal" v-show="visible" @click.stop="hideSelf">
+  <section class="modal" v-show="visible" @click.stop="hideSelf">
     <div class="center" @click.stop>
       <div class="head">
         {{ title ? title : ''}}
@@ -9,7 +9,7 @@
         <slot></slot>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
