@@ -32,28 +32,26 @@ export default {
 <style lang="less" scoped>
 .modal {
   position: fixed;
-  z-index: 999;
   left: 0;
   top: 0;
+  z-index: 999;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   .center {
     width: 1036px;
     height: 818px;
+    margin: 60px auto 0;
 
     .head {
+      position: relative;
       height: 50px;
       background: #fb621e;
-      color:#fff;
       font-size: 20px;
+      color: #fff;
       text-align: center;
-      line-height:50px;
-      position: relative;
+      line-height: 50px;
 
       button {
         position: absolute;
@@ -62,23 +60,23 @@ export default {
         display: block;
         width: 34px;
         height: 34px;
+        background: url(../../../public/img/dialogBtn.png) no-repeat;
         border: 0;
         padding: 0;
         outline: none;
         cursor: pointer;
-        background: url(../../../public/img/dialogBtn.png) no-repeat;
-        transition: transform .2s;
+        transition: transform 0.2s;
       }
 
-      button:hover{
+      button:hover {
         transform: rotateZ(180deg);
       }
     }
 
     .body {
+      overflow: hidden;
       height: 748px;
       background: #fff;
-      overflow: hidden;
     }
   }
 }
